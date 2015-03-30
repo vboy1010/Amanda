@@ -1,0 +1,243 @@
+### app_store ###
+(+open_market_soft market_soft_id)
+pname
+(+soft os_id)
+(+soft soft_type)
+os_version
+soft_name
+(+soft soft_disp_name)
+soft_brief
+edition_brief
+soft_corp_name
+logo_url (*soft soft_logo_url)
+logo_url_8
+logo_url_48
+snap_urls (*soft soft_snap_url) (*open_market_soft soft_snap_url)
+snap_urls_compact
+soft_search_tag
+is_free (*soft isfree)
+soft_language 
+price_info (*soft soft_free_disp)
+is_ad
+is_plugin
+baike_name (*soft soft_baike_name)
+search_tag
+is_online
+(+open_market_soft is_online_market)
+download_times (*open_market_soft market_download_times)
+vote_scores
+soft_scores
+version_name (*soft_model soft_version)
+version_code
+pdown_url
+market_ids (*open_market_soft market_id)
+download_urls (*soft_model download_url) (*open_market_soft download_url)
+signature_md5s (*soft_model signature_md5) (*open_market_soft signature_md5)
+rsa_md5s (*soft_model rsa_md5) (*open_market_soft rsa_md5)
+apk_md5s  (*soft_model md5)
+apk_sizes (*soft_model soft_size)
+oms_create_time
+oms_update_time
+create_time
+update_time
+editor_id
+is_point_show (强推，非强推) (不展示其他市场，状态展示）
+promote_info
+(+soft soft_mobile_msg)
+tag_key_words
+box_label （首发，最新，热门，独家，推广，活动）（右侧标签）
+recommend_order （搜索排序）
+(+soft recommend)
+(+soft soft_order) ### for what???
+(+soft jifeng_id)
+(+soft aimi_id)
+(+soft wap_snap_url)
+(+soft box_snap_url)
+(+soft pad_logo_url)
+(+soft box_snap_url_compact)
+(+soft pad_logo_url_compact)
+mid
+edit_time
+is_online_editor
+offline_reason
+is_black （？是否黑名单 --- 状态展示）
+is_offerwall （是否积分墙）
+is_push_ad
+apk_size_level
+cdn_apk_download_url
+soft_snap_url
+cdn_logo_url
+cdn_logo_url_8
+cdn_logo_url_48
+cdn_snap_urls
+cdn_snap_urls_compact
+power_brief （特权说明）
+short_name
+is_need_match （是否适配，状态展示）
+is_authority
+alias_name （软件搜索名称） （可去掉）
+uses_permission (+soft_model permission)
+is_threshold
+threshold_time （控量截止时间）（有新版本不提示升级）
+google_rsa_md5
+is_authority_g
+(+soft soft_statistic_id)
+(+soft soft_condition) ### condition字段值很乱，做什么的？
+(+soft is_popular)
+(+soft price) ### 价格描述字段  (---)
+(+soft is_channel_app) ### 是否渠道包
+(+soft dev_id)
+(+soft offerwall_info) ### 积分墙说明(-- aaa --)
+(+soft ad_info)
+(+soft soft_logo_32)
+(+soft dev_app_id)
+(+soft download_update_type) ### 是否自动更新
+(+soft ios_scheme)
+(+soft_model model_id)
+(+soft_model soft_suffix)
+(+soft_model platform)
+(+soft_model scan_key)
+(+open_market_soft is_pass_scan)
+(+open_market_soft scan_result)
+
+
+
+### app_group ###
+
+### app_group_map ###
+
+### app_diff ###
+soft_id
+pname
+download_url_diff
+size_diff
+md5_diff
+download_url_n
+version_code_n
+size_n
+md5_n
+download_url_o
+version_code_o
+size_o
+md5_o
+is_md5_match
+is_diff
+is_upload
+is_online
+is_expire
+create_time
+diff_time
+upload_time
+online_time
+expire_time
+autoupload_task_id
+autoupload_message
+add_type
+apk_type
+
+### app_subcates ### 子类的映射（方便现在的类别对应）
+soft_id
+category_level1_id
+category_level2_id
+soft_order
+soft_logo_url
+update_time
+editor_id
+category_comment
+
+
+### app_dev_push ### (导入信息+apk基本信息)
+soft_id
+pname
+dev_appid (app_id)
+dev_uid (dev_id)
+soft_name
+soft_corp_name
+soft_brief
+edition_brief
+small_logo_url(48*48)
+large_logo_url(72*72)
+snap_url
+language
+is_free
+is_ad
+is_offerwall
+ad_info
+price_info
+offerwall_info
+category_level1_id
+category_level2_id
+size
+version_name
+version_code
+platform
+permission
+md5
+signature_md5
+download_url
+dev_admin_name
+is_certify (是否授权包）
+category_tag
+
+### app_market_grasp ### (市场抓取)
+md5
+market
+soft_name
+cid (level1_id)
+ccid (level2_id)
+osver (os_version)
+brief (soft_brief)
+tag (search_tag)
+download_times
+soft_id (market_soft_id)
+soft_version
+soft_corp_name
+soft_logo_url
+soft_snap_url
+soft_snap_url_compact
+isfree
+price
+soft_language
+create_time
+update_time
+pname
+download_url
+is_ad
+is_plugin
+apk_md5
+soft_size
+version_code
+edition_brief
+
+//以下为360市场独有
+tag_key_words
+pdown
+promote_info
+helper_snap_url (助手截图）
+is_authority (开发者授权包）
+
+
+
+### app_white_push ### (白名单push）
+
+third_soft_name
+third_pname
+third_version_code
+third_version_name
+third_soft_brief
+third_author
+third_key_words
+third_72logo_url
+third_snap_urls
+third_download_url
+real_download_url
+third_download_times
+third_website
+third_page_url
+third_category_name
+file_md5
+third_rsa_md5
+create_time
+import_time
+
+
